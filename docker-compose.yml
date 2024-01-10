@@ -20,7 +20,7 @@ services:
     volumes:
       - /var/log:/var/log
       - /var/log/nginx:/var/log/nginx
-      - /home/deploy/promtailloki/promtail:/etc/promtail
+      - /home/deploy/promtailloki/promtail:/etc/promtail 
       - /home/deploy/backend/logs:/var/log/backend/logs
     command: -config.file=/etc/promtail/promtail-config.yaml
     networks:
